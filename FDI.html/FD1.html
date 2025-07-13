@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Portfolio Investment System</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Foreign Investment System</h1>
+
+        <!-- Country Selection -->
+        <div class="input-section" id="country-section">
+            <h2>Select Country</h2>
+            <select id="country">
+                <option value="USA">United States</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+            </select>
+            <button id="country-next-btn">Next</button>
+        </div>
+
+        <!-- Trending Sector Selection -->
+        <div class="input-section" id="sector-section" style="display: none;">
+            <h2>Select Trending Sector</h2>
+            <select id="sector">
+                <!-- Sectors will dynamically update based on country -->
+            </select>
+            <button id="sector-next-btn">Next</button>
+        </div>
+
+        <!-- Top Companies and Financial Factors -->
+        <div class="companies-section" id="companies-section" style="display: none;">
+            <h2>Top Companies in Selected Sector</h2>
+            <div id="companies-list"></div>
+            <button id="recommend-btn">Recommend Top 3 Companies</button>
+        </div>
+
+        <!-- Recommendation Section -->
+        <div class="recommendation-section" id="recommendation-section" style="display: none;">
+            <h2>Recommended Top 3 Companies</h2>
+            <div id="recommended-companies"></div>
+            <button id="restart-btn">Start Over</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
